@@ -16,26 +16,26 @@
     >;
   };
 
-  encoder0: encoder {
+encoder0: encoder {
     compatible = "zmk,ec11";
     gpios = <
-      &gpio0 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)   /* A */
-      &gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)   /* B */
-      &gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)   /* SW */
+        &gpio0 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)   /* A */
+        &gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)   /* B */
+        &gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)   /* SW */
     >;
     label = "EC11_0";
-  };
+};  // Make sure this ending brace and semicolon are present
 
-  &i2c0 {
+&i2c0 {
     status = "okay";
     oled: ssd1306@3c {
-      compatible = "solomon,ssd1306";
-      reg = <0x3c>;
-      width = <128>;
-      height = <32>;
-      label = "SSD1306_128X32";
+        compatible = "solomon,ssd1306";
+        reg = <0x3c>;
+        width = <128>;
+        height = <32>;
+        label = "SSD1306_128X32";
     };
-  };
+};
 
   battery: battery_voltage {
     compatible = "zmk,battery-voltage-divider";
