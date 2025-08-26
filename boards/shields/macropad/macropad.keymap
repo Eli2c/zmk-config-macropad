@@ -8,10 +8,10 @@
 
         default_layer {
             bindings = <
-                &consumer C_PP  /* key 0 */
-                &consumer C_STOP         /* key 1 */
-                &consumer C_PREV   /* key 2 */
-                &consumer C_NEXT   /* key 3 */
+                &kp C_PP  /* key 0 */
+                &kp C_STOP         /* key 1 */
+                &kp C_PREV   /* key 2 */
+                &kp C_NEXT   /* key 3 */
             >;
          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
