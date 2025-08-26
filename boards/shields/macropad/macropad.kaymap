@@ -1,0 +1,24 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt-media-keys.h>
+
+ / {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &consumer PLAY_PAUSE   /* key 0 */
+                &consumer STOP         /* key 1 */
+                &consumer PREV_TRACK   /* key 2 */
+                &consumer NEXT_TRACK   /* key 3 */
+            >;
+
+            encoder_bindings = <
+                &beh_encoder_vol_up   /* rotate clockwise */
+                &beh_encoder_vol_down /* rotate counter-clockwise */
+                &consumer MUTE        /* push */
+            >;
+        };
+    };
+};
