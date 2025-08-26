@@ -19,21 +19,6 @@
         label = "EC11_0";
     };
 
-   battery: battery_voltage {
-    compatible = "zmk,battery-voltage-divider";
-    io-channels = <&adc 2>;
-    output-ohms = <100000>;
 
-    };
 };
 
-&i2c0 {
-    status = "okay";
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-        label = "SSD1306_128X32";
-    };
-};
