@@ -23,8 +23,6 @@
     compatible = "zmk,battery-voltage-divider";
     io-channels = <&adc 2>;
     output-ohms = <100000>;
-    full-conversion-mv = <4200>;
-    empty-conversion-mv = <3300>;
 
     };
 };
