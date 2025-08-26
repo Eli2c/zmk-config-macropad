@@ -33,7 +33,7 @@ battery: battery_voltage {
     full-conversion-mv = <4200>;
     empty-conversion-mv = <3300>;
 };
-
+};
 
 &i2c0 {
     status = "okay";
