@@ -23,15 +23,15 @@ encoder0: encoder {
     label = "EC11_0";
 };  // Make sure this ending brace and semicolon are present
 
-  battery: battery_voltage {
+
+battery: battery_voltage {
     compatible = "zmk,battery-voltage-divider";
+    io-channels = <&adc 2>;
     vref-mv = <3300>;
     vbat-r1 = <100000>;
     vbat-r2 = <100000>;
-    adc = <&adc 2>;
     full-conversion-mv = <4200>;
     empty-conversion-mv = <3300>;
-  };
 };
 
 
