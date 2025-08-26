@@ -1,11 +1,2 @@
-menu "Macropad Shield"
-
-config MACROPAD
-    bool "4-key macropad shield"
-    default y
-    help
-      Enable support for the 4-key macropad shield with OLED and encoder.
-
-source "boards/shields/macropad/macropad.overlay"
-
-endmenu
+config SHIELD_MACROPAD
+    def_bool $(shields_list_contains,macropad)
