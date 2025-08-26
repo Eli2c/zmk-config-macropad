@@ -13,12 +13,7 @@
                 &consumer C_PREV   /* key 2 */
                 &consumer C_NEXT   /* key 3 */
             >;
-
-            encoder_bindings = <
-                &beh_encoder_vol_up   /* rotate clockwise */
-                &beh_encoder_vol_down /* rotate counter-clockwise */
-                &consumer MUTE        /* push */
-            >;
+         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
