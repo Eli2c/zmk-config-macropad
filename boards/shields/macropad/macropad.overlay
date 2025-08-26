@@ -22,7 +22,6 @@
    battery: battery_voltage {
     compatible = "zmk,battery-voltage-divider";
     io-channels = <&adc 2>;
-    vref-mv = <3300>;
     vbat-r1 = <100000>;
     vbat-r2 = <100000>;
     output-ohms = <100000>;
