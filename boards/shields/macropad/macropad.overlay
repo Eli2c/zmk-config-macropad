@@ -31,7 +31,7 @@ encoder0: encoder {
     vref-mv = <3300>;
     vbat-r1 = <100000>;
     vbat-r2 = <100000>;
-    adc = <&adc0 2>;
+    adc = <&adc 2>;
     full-conversion-mv = <4200>;
     empty-conversion-mv = <3300>;
   };
