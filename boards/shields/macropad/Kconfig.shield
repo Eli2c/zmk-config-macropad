@@ -6,6 +6,6 @@ config MACROPAD
     help
       Enable support for the 4-key macropad shield with OLED and encoder.
 
-source "boards/shield/macropad/macropad.overlay"
+source "boards/shields/macropad/macropad.overlay"
 
 endmenu
