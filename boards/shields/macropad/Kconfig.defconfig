@@ -1,31 +1,6 @@
-menu "Macropad Default Configuration"
+if SHIELD_MACROPAD
 
-config ZMK_BATTERY
-    bool "Enable battery support"
-    default y
+config ZMK_KEYBOARD_NAME
+    default "macropad"
 
-config DISPLAY
-    bool "Enable display support"
-    default y
-
-config SSD1306
-    bool "Enable SSD1306 OLED support"
-    default y
-
-config ZMK_ENCODERS
-    bool "Enable rotary encoder support"
-    default y
-
-config USB_DEVICE_STACK
-    bool "Enable USB device stack"
-    default y
-
-config LOG
-    bool "Enable logging"
-    default y
-
-config LOG_DEFAULT_LEVEL
-    int "Default log level"
-    default 3
-
-endmenu
+endif
