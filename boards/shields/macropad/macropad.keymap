@@ -8,12 +8,12 @@
 
         default_layer {
             bindings = <
-                &kp C_PP  /* key 0 */
-                &kp C_STOP         /* key 1 */
-                &kp C_PREV   /* key 2 */
-                &kp C_NEXT   /* key 3 */
+                &kp C_PP  
+                &kp C_STOP         
+                &kp K_PREV   
+                &kp K_NEXT   
             >;
-         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+         sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
         };
     };
 };
