@@ -10,10 +10,10 @@
             bindings = <
                 &kp C_PP  
                 &kp C_STOP         
-                &kp K_PREV   
-                &kp K_NEXT   
+                &kp C_PREV   
+                &kp C_NEXT   
             >;
-         sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
+         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
